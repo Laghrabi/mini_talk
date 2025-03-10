@@ -6,7 +6,7 @@
 /*   By: claghrab <claghrab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:39:21 by claghrab          #+#    #+#             */
-/*   Updated: 2025/03/10 19:41:00 by claghrab         ###   ########.fr       */
+/*   Updated: 2025/03/10 20:15:58 by claghrab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 void	handle_signal(int signum, siginfo_t *info, void *context)
 {
-	static char	character;
+	static char	character = 0;
 	static int	bit_count;
 
-	character = 0;
 	(void)context;
 	if (signum == SIGUSR2)
 		character |= (1 << (7 - bit_count));
