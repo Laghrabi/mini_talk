@@ -6,7 +6,7 @@
 /*   By: claghrab <claghrab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:39:56 by claghrab          #+#    #+#             */
-/*   Updated: 2025/03/10 19:41:39 by claghrab         ###   ########.fr       */
+/*   Updated: 2025/03/13 13:53:11 by claghrab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	send_bit(int pid, int bit)
 		kill(pid, SIGUSR1);
 	else
 		kill(pid, SIGUSR2);
-	usleep(1000);
+	usleep(800);
 }
 
 void	send_string(int pid, const char *str)
