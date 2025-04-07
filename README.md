@@ -1,6 +1,6 @@
 # MiniTalk - Signal-Based Communication Project
 
-## Description
+## Description 
 
 MiniTalk is a simple client-server application that demonstrates inter-process communication using Unix signals. The client sends a string to the server, where each character is transmitted as a sequence of bits (0s and 1s), and the server decodes and displays the message character by character. The communication is done using `SIGUSR1` and `SIGUSR2` signals to represent bits, and the server acknowledges receipt of each character. 
 
